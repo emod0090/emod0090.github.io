@@ -589,3 +589,19 @@ h6,
 .footer .footer-menu a:hover {
     color: var(--secondary);
 }
+
+a.navbar-brand {
+    width: 100px;
+}
+
+body .bg-primary {
+    background-color: #388E3C !important;
+}
+
+.text-primary {
+    color: #388E3C !important;
+}
+
+.service-item:hover {
+    background-color: #388E3C;
+}
