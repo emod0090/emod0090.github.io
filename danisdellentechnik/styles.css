@@ -122,3 +122,8 @@ body {
     color: #ccc;
     border-top: 2px solid #ff0000; /* Rote Akzentlinie */
   }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
