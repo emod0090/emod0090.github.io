@@ -53,7 +53,7 @@ body {
     width: 100%;
     font-size: 2rem;
     margin-bottom: 0.5rem;
-    color: #ff0000; /* Rote Akzentfarbe */
+    color: #ff0000;
   }
   
   .about p {
@@ -121,7 +121,7 @@ body {
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: 2px solid #ff0000; /* Rote Akzentfarbe */
+    border: 2px solid #ff0000;
   }
   
   footer {
@@ -130,7 +130,7 @@ body {
     text-align: center;
     font-size: 0.9rem;
     color: #ccc;
-    border-top: 2px solid #ff0000; /* Rote Akzentlinie */
+    border-top: 2px solid #ff0000;
   }
 
   footer a {
