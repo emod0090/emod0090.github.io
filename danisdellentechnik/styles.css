@@ -7,11 +7,15 @@ body {
   
   header {
     background-color: #1c1c1c;
+    width: 100vh; 
     padding: 1.5rem;
     margin-bottom: 0.5rem;
     text-align: center;
     display: flex;
     justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 1000; 
   }
   
   header .logo {
@@ -20,6 +24,7 @@ body {
   }
 
   .banner-top {
+    margin-top: 110px;
     display: flex;
     justify-content:left;
   }
