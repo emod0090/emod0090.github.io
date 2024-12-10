@@ -1,97 +1,44 @@
 body {
-    margin: 0.5rem;
-    font-family: Arial, sans-serif;
-    color: #000000;
-    background-color: #ffffff;
-  }
-  
-  header {
-    background-color: #c0ffca;
-    padding: 1.5rem;
-    margin-bottom: 0.5rem;
+    background-color: rgb(255, 255, 255);
+}
+
+header {
+    background-color: rgba(73, 254, 67, 0.3);
+    border-radius: 1rem;
+}
+
+.logo {
     display: flex;
     justify-content: center;
-  }
-  
-    .logo {
-    w
-  }
+}
 
-  .banner-top {
-    margin-top: 110px;
+.logo-header {
+    width: 40%;
+    min-width: 300px;
+}
+
+.about-text {
     display: flex;
-    justify-content:left;
-  }
-
-  .banner-top img {
-    max-width: 200px;
-  }
-  
-  main {
-    padding: 1.5rem;
-  }
-  
-  .about {
-    margin-bottom: 2rem;
-    text-align: center;
-  }
-
-  .about-text {
-    display: flex;
-    justify-content: center;
     flex-wrap: wrap;
-  }
-  
-  .about h1 {
+    justify-content: center;
+}
+
+.about-text h1 p {
     width: 100%;
-    font-size: 2rem;
-    margin-bottom: 0.5rem;
-    color: #ff0000;
-  }
-  
-  .about p {
-    width: 100%;
-    font-size: 1rem;
-    line-height: 1.6;
-    max-width: 640px;
-  }
-  
-  .icon-section {
+}
+
+.icon-section {
     display: flex;
     justify-content: center;
-    gap: 1.5rem;
-    margin-top: 1.5rem;
-  }
-  
-  .icon {
-    text-align: center;
+}
 
-  }
-  
-  .icon img {
-    width: 80px;
-    height: 80px;
-    margin-bottom: 0.5rem;
-    border-radius: 50%;
-    background-color: #ff0000;
-  }
-  
-  .icon p {
-    font-size: 0.9rem;
-    color: #f4f4f4;
-  }
+.icon {
+    background-color: red;
+    margin: 0.5rem;
+}
 
-  .banner-bottom {
-    display: flex;
-    justify-content: right;
-  }
 
-  .banner-bottom img {
-    max-width: 200px;
-  }
-
-  /* Gallerie */
-  .gallery {
+.gallery {
     text-align: center;
     margin-bottom: 1rem;
   }
@@ -116,17 +63,14 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     border: 2px solid #ff0000;
   }
-  
-  footer {
-    background-color: #1c1c1c;
-    padding: 1rem;
-    text-align: center;
-    font-size: 0.9rem;
-    color: #ccc;
-    border-top: 2px solid #ff0000;
-  }
 
-  footer a {
+footer {
+    display: flex;
+    justify-content: center;
+    background-color: rgba(73, 254, 67, 0.3);
+}
+
+footer a {
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
   }
