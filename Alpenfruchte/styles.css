@@ -1,0 +1,132 @@
+body {
+    margin: 0.5rem;
+    font-family: Arial, sans-serif;
+    color: #000000;
+    background-color: #ffffff;
+  }
+  
+  header {
+    background-color: #c0ffca;
+    padding: 1.5rem;
+    margin-bottom: 0.5rem;
+    display: flex;
+    justify-content: center;
+  }
+  
+    .logo {
+    w
+  }
+
+  .banner-top {
+    margin-top: 110px;
+    display: flex;
+    justify-content:left;
+  }
+
+  .banner-top img {
+    max-width: 200px;
+  }
+  
+  main {
+    padding: 1.5rem;
+  }
+  
+  .about {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  .about-text {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+  
+  .about h1 {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    color: #ff0000;
+  }
+  
+  .about p {
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.6;
+    max-width: 640px;
+  }
+  
+  .icon-section {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 1.5rem;
+  }
+  
+  .icon {
+    text-align: center;
+
+  }
+  
+  .icon img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 0.5rem;
+    border-radius: 50%;
+    background-color: #ff0000;
+  }
+  
+  .icon p {
+    font-size: 0.9rem;
+    color: #f4f4f4;
+  }
+
+  .banner-bottom {
+    display: flex;
+    justify-content: right;
+  }
+
+  .banner-bottom img {
+    max-width: 200px;
+  }
+
+  /* Gallerie */
+  .gallery {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  
+  .gallery h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #ff0000; 
+  }
+  
+  .gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 1rem;
+    justify-items: center;
+  }
+  
+  .gallery-grid img {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    border: 2px solid #ff0000;
+  }
+  
+  footer {
+    background-color: #1c1c1c;
+    padding: 1rem;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #ccc;
+    border-top: 2px solid #ff0000;
+  }
+
+  footer a {
+    text-decoration: none;
+    color: white;
+  }
