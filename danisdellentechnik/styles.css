@@ -230,5 +230,6 @@ body {
   }
 
   .offline {
-    margin-top: 200px;
+    margin-top: 120px;
+    text-align: center;
   }
