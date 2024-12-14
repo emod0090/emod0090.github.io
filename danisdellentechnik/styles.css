@@ -135,6 +135,82 @@ body {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
   }
   
+  /* Kontakt */
+  .contact {
+    margin-top: 110px;
+  }
+
+  .contact-form {
+    background-color: rgba(#121212);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #d1cfcf;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #ff0000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.5);
+  }
+  
+  .contact-form button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #c10000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #00a4ea;
+  }
+  
+  .contact-form button:active {
+    background-color: #003d80;
+  }
+
+  .contact-info {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+
+  .contact-info p {
+    width: 100%;
+    text-align: center;
+  }
+
+  .contact-info a {
+    text-decoration: none;
+    color: white;
+  }
+
   footer {
     background-color: #1c1c1c;
     padding: 1rem;
