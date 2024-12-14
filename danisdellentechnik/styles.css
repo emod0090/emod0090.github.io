@@ -228,3 +228,7 @@ body {
   .tel-number {
     white-space: nowrap;
   }
+
+  .offline {
+    margin-top: 110px;
+  }
