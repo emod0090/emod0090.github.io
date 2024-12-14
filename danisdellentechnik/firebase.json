@@ -1,24 +1,13 @@
 {
     "hosting": {
       "public": "/",
-      "headers": [
-        {
-          "source": "**",
-          "headers": [
-            {
-              "key": "Cache-Control",
-              "value": "no-store"
-            }
-          ]
-        }
-      ],
-      "redirects": [
-        {
-          "source": "**",
-          "destination": "/403.html",
-          "type": 307
-        }
+      "ignore": [
+        "firebase.json",
+        "**/.*",
+        "**/node_modules/**"
       ]
     }
   }
+  
+  
   
