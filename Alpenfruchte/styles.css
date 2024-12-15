@@ -66,6 +66,7 @@ header {
 footer {
     display: flex;
     justify-content: center;
+    width: 100%;
     background-color: rgba(73, 254, 67, 0.3);
 }
 
