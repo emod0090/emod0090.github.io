@@ -46,7 +46,7 @@ header {
   .gallery h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: #ff0000; 
+    color: #725f5f; 
   }
   
   .gallery-grid {
@@ -61,7 +61,6 @@ header {
     max-width: 300px;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
-    border: 2px solid #ff0000;
   }
 
 footer {
