@@ -14,6 +14,8 @@ header {
 nav {
     display: flex;
     justify-content: center;
+    margin-top: 0;
+    padding: 0;
 }
 
 nav a {
@@ -28,6 +30,7 @@ nav a {
 .logo {
     display: flex;
     justify-content: center;
+    margin-bottom: 0;
 }
 
 .logo-header {
