@@ -1,12 +1,28 @@
+
+
 body {
-    background-color: rgb(255, 255, 255);
     border: solid black 5px;
     border-radius: 1rem;
     padding: 1rem;
 }
 
+body::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('images/background-fruchte.png');
+  background-size: contain;
+  background-repeat: repeat;
+  background-position: center;
+  background-attachment:fixed;
+  opacity: 0.1;
+  z-index: -1; 
+}
+
 header {
-    background-color: 
     border-radius: 1rem;
     padding-bottom: 1rem;
 }
@@ -67,11 +83,6 @@ nav a {
 .icon-section {
     display: flex;
     justify-content: center;
-}
-
-.icon {
-    background-color: red;
-    margin: 0.5rem;
 }
 
 .contact-topping {
