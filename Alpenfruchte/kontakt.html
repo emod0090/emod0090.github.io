@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Ihr Frischepartner für Obst/Gemüse und nonfood Gastroartikel Lieferung">
+  <link rel="icon" href="images/logos/favicon.png" type="image/png">
+  <title>Alpenfrüchte</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <a href="index.html">
+            <div class="logo"><img class="logo-header" src="images/logos/Logo-straight.png" alt=""></div>
+    </a>
+    <nav class="nav">
+      <a id="contacts" href="contacts">Kontakt</a>
+      <a href="impressum">Impressum</a>
+   </nav>
+  </header>
+<main>
+    <section class="contact">
+        <h1>Kontakt</h1>
+        <p>Wir freuen uns auf Ihre Anfrage! Nutzen Sie das Kontaktformular oder die unten angegebenen Informationen, um uns zu erreichen.</p>
+  
+        <div class="contact-container">
+          <div class="contact-form">
+            <form action="https://api.web3forms.com/submit" method="post">
+              <input type="hidden" name="access_key" value="e573df65-ebb8-49cc-a759-76a050c31daf">
+  
+              <label for="name">Name:</label>
+              <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+  
+              <label for="email">E-Mail:</label>
+              <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+  
+              <label for="message">Nachricht:</label>
+              <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+  
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              <button type="submit">Absenden</button>
+            </form>
+          </div>
+</main>
+  <footer>
+    <p>Kontakt: <a href="mailto:alpenfruechte@outlook.de">alpenfruechte@outlook.de</a>  | <a href="tel:+49 160 630 5234">+49 160 630 5234</a></p>
+  </footer>
+</body>
+</html>

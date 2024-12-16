@@ -64,6 +64,65 @@ nav a {
     margin: 0.5rem;
 }
 
+.contact {
+    margin-top: 110px;
+  }
+
+  .contact-form {
+    background-color: rgba(#121212);
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #000000;
+  }
+  
+  .contact-form input,
+  .contact-form textarea {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #000000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .contact-form input:focus,
+  .contact-form textarea:focus {
+    outline: none;
+    border-color: #79eab0;
+    box-shadow: 0 0 5px rgba(65, 160, 86, 0.5);
+  }
+  
+  .contact-form button {
+    display: block;
+    width: 95%;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #000000;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #86ef8d;
+    color: #000000;
+  }
+  
+  .contact-form button:active {
+    background-color: #086b4a;
+  }
 
 .gallery {
     text-align: center;
