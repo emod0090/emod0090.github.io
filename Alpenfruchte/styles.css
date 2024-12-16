@@ -1,9 +1,11 @@
 body {
     background-color: rgb(255, 255, 255);
+    border: solid black 5px;
+    padding: 1rem;
 }
 
 header {
-    background-color: rgba(73, 254, 67, 0.3);
+    background-color: 
     border-radius: 1rem;
     padding-bottom: 1rem;
 }
@@ -15,7 +17,7 @@ nav {
 
 nav a {
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 #contacts {
@@ -54,6 +56,10 @@ nav a {
     margin-bottom: 0;
 }
 
+.inhalt-index h2 {
+    color: #000000;
+}
+
 .icon-section {
     display: flex;
     justify-content: center;
@@ -62,6 +68,21 @@ nav a {
 .icon {
     background-color: red;
     margin: 0.5rem;
+}
+
+.contact-topping {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.contact-topping h1 {
+    width: 100%;
+    text-align: center;
+}
+
+.contact-topping p {
+    max-width: 500px;
 }
 
 .contact {
@@ -153,11 +174,15 @@ footer {
     display: flex;
     justify-content: center;
     width: 100%;
-    background-color: rgba(73, 254, 67, 0.3);
+    background-color: #007a51;
     border-radius: 1rem;
 }
 
-footer a {
+footer a  {
     text-decoration: none;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
   }
+
+footer p {
+    color: white;
+}
