@@ -27,16 +27,17 @@ nav ul {
 }
 
 nav li {
-    margin: 0.3rem;
+    margin: 0.5rem;
 }
 
 nav ul a {
     text-decoration: none;
     color: black;
+    font-size: 0.8rem;
 }
 
 .list-icon {
-    height: 16px;
+    height: 14px;
 }
 
 .wide {
@@ -72,13 +73,16 @@ nav ul a {
 }
 
 footer {
-    background-color: rgb(232, 232, 232);
+    background-color: rgb(239, 239, 239);
     display: flex;
     justify-content: center;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
 }
 
 .content-footer {
-    width: 700px;
+    width: 800px;
+    padding: 1rem;
 }
 
 .smalltext {
