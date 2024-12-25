@@ -44,6 +44,15 @@ nav a {
     min-width: 300px;
 }
 
+.container-impressum {
+  display: flex;
+  justify-content: center;
+}
+
+.container-impressum div {
+  max-width: 700px;
+}
+
 .about-text {
     display: flex;
     flex-wrap: wrap;
