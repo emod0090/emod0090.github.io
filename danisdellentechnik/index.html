@@ -11,14 +11,19 @@
 <body>
   <header>
     <div class="logo"><img src="images/logo-full-silver.svg" alt=""></div>
+    <div class="nav">
+      <a href="#about">Über Uns</a>
+      <a href="#leistungen">Leistungen</a>
+      <a href="#kontakt">Kontakt</a>
+    </div>
   </header>
   <div class="decoration">
     <div class="banner-top">
         <img class="lokprof" src="images/lokal-prof.svg" alt="lokak und professionell">
     </div>
+  </div>
   <main>
-    </div>
-    <section class="about">
+    <section id="about" class="about">
         <div class="about-text">
             <h1>Willkommen bei Danis Dellentechnik</h1>
             <p>
@@ -27,19 +32,19 @@
             </p>     
         </div>
       
-      <div class="icon-section">
+      <!-- <div class="icon-section">
         <div class="icon">
           <div class="icon-border">
             <img src="images/haken.svg" alt="Delle Icon">
           </div>
-          <p>Dellenentfernung</p>
+          <p>Über Uns</p>
         </div>
         <a href="kontakt.html">
            <div class="icon">
           <div class="icon-border">
             <img src="https://via.placeholder.com/80/FF0000?text=K" alt="Karosserie Icon">
           </div>
-            <p>Kontakt</p>
+            <p>Leistungen</p>
           </div>
         </a>
        
@@ -47,9 +52,9 @@
           <div class="icon-border">
             <img src="images/paint-pistol.svg" alt="Politur Icon">
           </div>
-          <p>Professionelle Politur</p>
+          <p>Kontakt</p>
         </div>
-      </div>
+      </div> -->
     <section>
       <!-- 
         <div class="decoration">
@@ -60,6 +65,81 @@
       -->
     </section>  
     </section>
+    <section id="leistungen" class="leistungen">
+      <div class="lakierung">
+        <div><img src="images/Beispiele/beispiel-16.jpg" alt=""></div>
+        <div>
+          <h2>Lakierungen</h2>
+          <p>Schnell ist es passiert und schnell kann es behoben werden. <br>
+            Wenn Sie es vor dem Hagelunwetter mit Ihrem Fahrzeug nicht rechtzeitig in die Garage geschafft haben, helfen wir Ihnen gerne. Durch die von den Versicherungen anerkannten und empfohlenen Drück- und Klebetechniken beseitigen wir Hagelschäden rückstandslos ohne die Bauteile neu lackieren zu müssen. Die durch den Hagel beschädigten Teile wie Rückleuchten, Glasscheiben oder Zierleisten werden ersetzt. Der Schaden kann direkt mit Ihrer Versicherung abgerechnet werden.</p>
+        </div>
+      </div>
+      <div class="aufbereitung">
+        <div>
+          <h2>Aufbereitung</h2>
+          <p>
+            Kurz nicht aufgepasst und schon ist es passiert: Ein fremdes Fahrzeug touchiert, der Einkaufswagen rollt gegen ein Auto, ein Fahrad kippt gegen das Motorrad oder spielende Kinder bewirken unschöne Dellen an einem parkenden Auto. Aber solange der Lack nicht aufgeplatzt ist, können solche Schäden in den meisten Fällen ohne zusätzliche Lackierung instandgesetzt werden. <br>
+            Falls der Lack doch beschädigt sein sollte, können wir die Delle zum Lackieren vordrücken und das Fahrzeug an einen unserer Lackierpartner weiterleiten.
+          </p>
+        </div>
+        <div><img src="images/Beispiele/beispiel-14.jpg" alt=""></div>
+      </div>
+      <div class="dellenent">
+        <div><img src="images/Beispiele/beispiel-2.jpg" alt=""></div>
+        <div>
+          <h2>Dellenentfernung</h2>
+          <p>
+            Schnell ist es passiert und schnell kann es behoben werden. br
+            Wenn Sie es vor dem Hagelunwetter mit Ihrem Fahrzeug nicht rechtzeitig in die Garage geschafft haben, helfen wir Ihnen gerne. Durch die von den Versicherungen anerkannten und empfohlenen Drück- und Klebetechniken beseitigen wir Hagelschäden rückstandslos ohne die Bauteile neu lackieren zu müssen. Die durch den Hagel beschädigten Teile wie Rückleuchten, Glasscheiben oder Zierleisten werden ersetzt. Der Schaden kann direkt mit Ihrer Versicherung abgerechnet werden. 
+          </p>
+        </div>
+      </div>
+      <div class="smart">
+        <div>
+          <h2>Smart Repair</h2>
+          <p>Smart Repair - mit speziellen Werkzeugen und Hilfsmitteln </p>
+          <p>
+            Die Dellen werden mit speziellen Werkzeugen und Hilfsmitteln aus der Karosserie herausgedrückt bzw. herausgezogen, ohne an der Karosserie bohren oder schleifen zu müssen. Im Vergleich zum Lackieren ist die Reparaturdauer viel kürzer und es ist umweltfreundlicher. Da keine Neulackierung erforderlich wird, erleidet das Fahrzeug auch keinen Wertverlust, die Herstellergarantie auf Lack und Durchrostung bleibt erhalten und Sie müssen keinen Farbunterschied befürchten. <br>
+            Die sanfte Instandsetzung ist allerdings nicht immer anwendbar. Sind die Dellen zu tief, der Lack beschädigt oder das Blech zu sehr verformt muss auf die geld- und zeitaufwendige Reparatur durch Instandsetzen und Lackieren zurückgegriffen werden. Diese Art von Schäden können wir für Sie zum Lackieren „vordrücken“ und bei einem unserer Lackpartner lackieren lassen.
+          </p>
+        </div>
+        <div><img src="images/Beispiele/beispiel-10.jpg" alt=""></div>
+      </div>
+    </section>
+  </section>
+  <section class="contact">
+    <div class="contact-entry">
+      <h1>Kontakt</h1>
+      <p>Wir freuen uns auf Ihre Anfrage! Nutzen Sie das Kontaktformular oder die unten angegebenen Informationen, um uns zu erreichen.</p>
+    </div>
+    <div class="contact-container">
+      <div class="contact-form">
+        <form action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="e573df65-ebb8-49cc-a759-76a050c31daf">
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" placeholder="Ihr Name" required>
+
+          <label for="email">E-Mail:</label>
+          <input type="email" id="email" name="email" placeholder="Ihre E-Mail-Adresse" required>
+
+          <label for="message">Nachricht:</label>
+          <textarea id="message" name="message" rows="5" placeholder="Ihre Nachricht" required></textarea>
+
+          <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+          <button type="submit">Absenden</button>
+        </form>
+      </div>
+
+      <div class="contact-info">
+        <h2>Kontaktinformationen</h2>
+        <p><strong>E-Mail:</strong> <a href="mailto:danisdellentechnik@outlook.de">danisdellentechnik@outlook.de</a></p>
+        <p><strong>Telefon:</strong> <a href="tel:+491607726271">+49 160 77 26 271</a></p>
+        <p><strong>Adresse:</strong> <a href="https://www.google.de/maps/place/Danis+Dellentechnik+%2F+Hagelschaden%2FParkdellen%2FBeulen%2FSmartrepair+%2F/@47.6896791,11.2007688,21z/data=!4m6!3m5!1s0x4c203942a9e6b757:0xacccb8d611099e4d!8m2!3d47.6896324!4d11.2006866!16s%2Fg%2F11wwchh4h8?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank">Straßäcker 25, 82418 Murnau</a></p>
+        <input type="hidden" name="redirect" value="danke.html">
+      </div>
+    </div>
+  </section>
     <section class="gallery">
       <div class="gallery-grid">
         <img src="images/Beispiele/beispiel-1.jpg" alt="Fahrzeug vor der Reparatur">
