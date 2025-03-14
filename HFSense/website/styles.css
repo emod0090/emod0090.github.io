@@ -25,15 +25,16 @@ body {
     padding: 20px;
   }
   button {
-    background-color: #d4af37;
-    color: white;
+    background-color: #503D00;
+    color: #e1cc88;
     border: none;
     padding: 10px 20px;
     border-radius: 10px;
     cursor: pointer;
   }
   button:hover {
-    background-color: #b9972e;
+    background-color: #e1cc88;
+    color: #503D00;
   }
   input, textarea {
     width: 100%;
