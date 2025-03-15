@@ -6,9 +6,8 @@ body {
     color: #333;
   }
   .mainlogo {
-    display: flex;
-    justify-content: center;
-    width: auto;
+    width: 100%;
+    max-width: 600px;
   }
   header, section, footer {
     padding: 20px;
