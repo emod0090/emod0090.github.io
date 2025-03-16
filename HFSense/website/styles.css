@@ -38,7 +38,7 @@ body {
     color: #503D00;
   }
   input, textarea {
-    width: 100%;
+    width: 95%;
     padding: 10px;
     margin-bottom: 10px;
     border: 1px solid #ccc;
@@ -47,6 +47,11 @@ body {
   textarea {
     height: 150px;
   }
+  input:focus, textarea:focus {
+    outline: none;
+    border: 2px solid #949415;
+    box-shadow: 0 0 5px rgba(186, 158, 20, 0.5); 
+}
   .image-container {
     display: flex;
     justify-content: center;
@@ -54,8 +59,8 @@ body {
     margin-bottom: 10px;
   }
   .image-container img {
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     object-fit: cover;
     border-radius: 10px;
   }

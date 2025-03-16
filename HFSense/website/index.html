@@ -23,16 +23,17 @@
       property="og:description"
       content="Präzise Messgeräte für Ihre Anwendungen. Besuchen Sie unseren eBay-Shop."
     />
-    <meta property="og:image" content="bild.jpg" />
+    <meta property="og:image" content="images/logo-full-brown.png" />
     <meta property="og:url" content="https://www.hf-sense.de" />
     <meta name="robots" content="index, follow" />
   </head>
   <body>
     <header>
-      <a href="index.html"><img
-        class="mainlogo"
-        src="images/logo-full-brown.png"
-        alt="HF-Sense_Logo"
+      <a href="index.html"
+        ><img
+          class="mainlogo"
+          src="images/logo-full-brown.png"
+          alt="HF-Sense_Logo"
       /></a>
     </header>
 
@@ -80,9 +81,10 @@
         </a>
       </div>
 
-      <div class="transparent-box">
+      <div class="transparent-box form">
         <h2>Kontaktformular</h2>
-        <form action="#" method="post">
+        <form action="https://api.web3forms.com/submit" method="post">
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE" />
           <input type="text" name="firma" placeholder="Firma" />
           <input type="text" name="name" placeholder="Name" />
           <input type="email" name="email" placeholder="E-Mail" />
@@ -97,17 +99,22 @@
       </div>
 
       <div class="transparent-box two-columns">
-        <a href="https://www.google.com/maps/search/?api=1&query=Kunreuthstr.+70,+81249+München" target="_blank">
+        <a
+          href="https://www.google.com/maps/search/?api=1&query=Kunreuthstr.+70,+81249+München"
+          target="_blank"
+        >
           <div>
-              <p>HFsense</p>
-              <p>Kunreuthstr. 70</p>
-              <p>81249 München</p>
+            <p>HFsense</p>
+            <p>Kunreuthstr. 70</p>
+            <p>81249 München</p>
           </div>
-      </a>
+        </a>
         <div>
           <p>Kontakt</p>
           <a href="tel:+491701470786"><p>Tel.: +49 170 14 70 786</p></a>
-          <a href="mailto:demir.latif@hfsense.de"><p>Mail: demir.latif@hfsense.de</p></a>
+          <a href="mailto:demir.latif@hfsense.de"
+            ><p>Mail: demir.latif@hfsense.de</p></a
+          >
         </div>
         <div class="impressum">
           <a href="impressum.html"><p>Impressum</p></a>
