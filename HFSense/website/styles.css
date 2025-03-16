@@ -7,7 +7,7 @@ body {
   }
   .mainlogo {
     width: 100%;
-    max-width: 600px;
+    max-width: 500px;
   }
   header, section, footer {
     padding: 20px;
@@ -61,7 +61,23 @@ body {
   }
   .two-columns {
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
+  }
+  .impressum {
+    width: 100%;
+  }
+ a {
+    text-decoration: none;
+    color: #333;
+  }
+
+  /* Impressum */
+  ul {
+    padding: 0;
+  }
+  ul li {
+    list-style-type: none;
   }
   @media (max-width: 600px) {
     .container {
@@ -70,14 +86,21 @@ body {
     .image-container {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
       gap: 10px;
     }
     .image-container img {
-      width: 100%;
+      max-width: 100px;
       height: auto;
+      object-fit: cover;
     }
     .two-columns {
         display: flex;
         flex-wrap: wrap;
+    }
+    .two-columns div {
+      width: 100%;
     }
   }
