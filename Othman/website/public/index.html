@@ -1,0 +1,740 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HF-Sense | Messgeräte Vertrieb & Kalibrierung</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="icon" href="images/logo-brown.svg" type="image/svg+xml" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <meta
+      name="description"
+      content="Professioneller Vertrieb von HF-Messgeräten mit höchster Präzision, Kalibrierung und Service. Rohde & Schwarz, Keysight und weitere Premium-Marken."
+    />
+    <meta
+      name="keywords"
+      content="Messgeräte, HF-Messgeräte, Präzision, Kalibrierung, Messtechnik, Rohde Schwarz, Keysight"
+    />
+    <meta name="author" content="HF-Sense" />
+    <meta property="og:title" content="HF-Sense | Hochwertige Messgeräte & Kalibrierung" />
+    <meta
+      property="og:description"
+      content="Professioneller Vertrieb von HF-Messgeräten mit DAKKS-Kalibrierung. Höchste Qualität und Präzision."
+    />
+    <meta property="og:image" content="images/logo-full-brown.png" />
+    <meta property="og:url" content="https://www.hf-sense.de" />
+    <meta name="robots" content="index, follow" />
+    <style>
+      :root {
+        --primary: #8B6F47;
+        --primary-dark: #6B5636;
+        --primary-light: #A0826D;
+        --secondary: #D4B5A0;
+        --text: #1a1a1a;
+        --text-light: #5a5a5a;
+        --bg: #ffffff;
+        --bg-light: #faf8f5;
+        --border: #e8dfd5;
+        --accent: #c89968;
+        --accent-light: #d9c4b0;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      html {
+        scroll-behavior: smooth;
+      }
+
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: var(--bg);
+        color: var(--text);
+        line-height: 1.6;
+      }
+
+      /* Header */
+      header {
+        position: sticky;
+        top: 0;
+        z-index: 100;
+        background: var(--bg);
+        border-bottom: 2px solid var(--accent-light);
+        backdrop-filter: blur(10px);
+        background: rgba(255, 255, 255, 0.98);
+        box-shadow: 0 2px 8px rgba(139, 111, 71, 0.08);
+      }
+
+      .topbar {
+        max-width: 1280px;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        padding: 0.8rem 1.5rem;
+      }
+
+      .mainlogo {
+        height: 45px;
+        width: auto;
+        flex-shrink: 0;
+      }
+
+      nav {
+        display: flex;
+        gap: 2rem;
+        align-items: center;
+      }
+
+      nav a {
+        color: var(--text-light);
+        text-decoration: none;
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: color 0.3s ease;
+        position: relative;
+      }
+
+      nav a:hover {
+        color: var(--primary);
+      }
+
+      nav a::after {
+        content: '';
+        position: absolute;
+        bottom: -6px;
+        left: 0;
+        width: 0;
+        height: 2px;
+        background: linear-gradient(90deg, var(--primary), var(--accent));
+        transition: width 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      nav a:hover::after {
+        width: 100%;
+      }
+
+      /* Main */
+      main {
+        max-width: 1280px;
+        margin: 0 auto;
+        padding: 3rem 1.5rem;
+      }
+
+      /* Hero Section */
+      .hero {
+        padding: 5rem 2.5rem;
+        margin-bottom: 3rem;
+        background: linear-gradient(135deg, #8B6F47 0%, #6B5636 50%, #5a4a30 100%);
+        border-radius: 24px;
+        color: white;
+        box-shadow: 0 20px 60px rgba(139, 111, 71, 0.25);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .hero::before {
+        content: '';
+        position: absolute;
+        top: -50%;
+        right: -50%;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
+        pointer-events: none;
+      }
+
+      .hero h1,
+      .hero p {
+        margin: 0;
+        position: relative;
+        z-index: 1;
+      }
+
+      .hero h1 {
+        font-size: clamp(2.5rem, 5vw, 3.8rem);
+        line-height: 1.1;
+        letter-spacing: -0.02em;
+        font-weight: 800;
+        margin-bottom: 1.2rem;
+        text-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      .hero p {
+        font-size: 1.2rem;
+        max-width: 700px;
+        opacity: 0.98;
+        line-height: 1.8;
+        font-weight: 300;
+      }
+
+      .section-grid {
+        display: grid;
+        gap: 2rem;
+      }
+
+      .transparent-box {
+        padding: 2.8rem;
+        border-radius: 16px;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.98), rgba(250, 248, 245, 0.95));
+        border: 1.5px solid var(--border);
+        box-shadow: 0 2px 8px rgba(139, 111, 71, 0.08), 0 1px 3px rgba(0, 0, 0, 0.04);
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+      }
+
+      .transparent-box:hover {
+        box-shadow: 0 16px 40px rgba(139, 111, 71, 0.15), 0 4px 12px rgba(0, 0, 0, 0.08);
+        transform: translateY(-4px);
+        border-color: var(--accent-light);
+      }
+
+      .transparent-box h2 {
+        font-size: 1.8rem;
+        margin: 0 0 1.6rem;
+        color: var(--primary);
+        font-weight: 700;
+        letter-spacing: -0.01em;
+      }
+
+      .transparent-box h3 {
+        font-size: 1.1rem;
+        margin: 1.6rem 0 0.8rem;
+        color: var(--primary);
+        font-weight: 700;
+      }
+
+      .transparent-box p,
+      .transparent-box li {
+        color: var(--text-light);
+        font-size: 0.95rem;
+        line-height: 1.8;
+      }
+
+      .transparent-box ul {
+        margin: 1rem 0 0 1.5rem;
+        padding: 0;
+        list-style: none;
+      }
+
+      .transparent-box ul li {
+        margin-bottom: 0.8rem;
+        padding-left: 1.5rem;
+        position: relative;
+      }
+
+      .transparent-box ul li::before {
+        content: '✓';
+        position: absolute;
+        left: 0;
+        color: var(--accent);
+        font-weight: 700;
+        font-size: 1.1em;
+      }
+
+      /* Image Container */
+      .image-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        gap: 1.2rem;
+        margin: 1.5rem 0;
+      }
+
+      .image-container img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        border-radius: 12px;
+        transition: transform 0.3s ease, box-shadow 0.3s ease;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .image-container img:hover {
+        transform: scale(1.05);
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+      }
+
+      /* Button */
+      button,
+      .transparent-box a button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+        padding: 0.95rem 2rem;
+        border: none;
+        border-radius: 10px;
+        background: linear-gradient(135deg, var(--primary) 0%, var(--accent) 100%);
+        color: white;
+        font-weight: 600;
+        font-size: 0.95rem;
+        cursor: pointer;
+        transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        box-shadow: 0 4px 12px rgba(139, 111, 71, 0.25);
+      }
+
+      button:hover,
+      .transparent-box a button:hover {
+        background: linear-gradient(135deg, var(--primary-dark) 0%, #a0826d 100%);
+        transform: translateY(-2px);
+        box-shadow: 0 8px 20px rgba(139, 111, 71, 0.35);
+      }
+
+      button:active {
+        transform: translateY(0);
+      }
+
+      /* Form */
+      .form form {
+        display: grid;
+        gap: 1.2rem;
+      }
+
+      .form input,
+      .form textarea {
+        width: 100%;
+        padding: 1rem 1.2rem;
+        border: 1.5px solid var(--border);
+        border-radius: 10px;
+        font-family: inherit;
+        font-size: 0.95rem;
+        color: var(--text);
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.8), var(--bg-light));
+        transition: all 0.3s ease;
+      }
+
+      .form input:focus,
+      .form textarea:focus {
+        outline: none;
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(139, 111, 71, 0.1);
+        background: var(--bg);
+      }
+
+      .form input::placeholder,
+      .form textarea::placeholder {
+        color: #999;
+      }
+
+      .form textarea {
+        min-height: 140px;
+        resize: vertical;
+      }
+
+      /* Two Columns */
+      .two-columns {
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      }
+
+      .two-columns a,
+      .two-columns div {
+        color: inherit;
+        text-decoration: none;
+      }
+
+      .two-columns p {
+        margin: 0.5rem 0;
+        color: var(--text-light);
+      }
+
+      .two-columns div h3 {
+        font-weight: 700;
+        color: var(--text);
+        margin-bottom: 1rem;
+      }
+
+      /* Partners List */
+      .partners-list {
+        display: grid;
+        gap: 0.8rem;
+      }
+
+      .partners-list h2 {
+        margin-bottom: 1.5rem;
+      }
+
+      .partners-list a {
+        display: block;
+        padding: 1.2rem 1.5rem;
+        border-radius: 12px;
+        color: var(--primary);
+        text-decoration: none;
+        background: linear-gradient(135deg, rgba(139, 111, 71, 0.06), rgba(160, 130, 109, 0.06));
+        border: 1.5px solid rgba(139, 111, 71, 0.15);
+        font-weight: 600;
+        transition: all 0.3s ease;
+      }
+
+      .partners-list a:hover {
+        background: linear-gradient(135deg, rgba(139, 111, 71, 0.12), rgba(160, 130, 109, 0.12));
+        transform: translateX(4px);
+        border-color: var(--accent-light);
+        box-shadow: 0 4px 12px rgba(139, 111, 71, 0.12);
+      }
+
+      /* Footer */
+      footer {
+        margin-top: 4rem;
+        padding: 2.5rem 1.5rem;
+        border-top: 2px solid var(--accent-light);
+        background: linear-gradient(135deg, var(--bg-light), rgba(192, 160, 130, 0.05));
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 2rem;
+        color: var(--text-light);
+        font-size: 0.9rem;
+      }
+
+      footer a {
+        color: var(--primary);
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s ease;
+      }
+
+      footer a:hover {
+        color: var(--accent);
+      }
+
+      footer h3 {
+        margin: 0;
+        color: var(--primary);
+      }
+
+      .section-title {
+        display: inline-flex;
+        align-items: center;
+        gap: 0.6rem;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 0.85rem;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        font-weight: 600;
+      }
+
+      /* Services Grid */
+      .services-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+        gap: 1.8rem;
+        margin: 2rem 0;
+      }
+
+      .service-card {
+        padding: 2rem;
+        border-radius: 14px;
+        background: linear-gradient(135deg, rgba(139, 111, 71, 0.05), rgba(160, 130, 109, 0.03));
+        border: 1.5px solid var(--border);
+        text-align: center;
+        transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .service-card:hover {
+        border-color: var(--accent-light);
+        background: linear-gradient(135deg, rgba(139, 111, 71, 0.1), rgba(160, 130, 109, 0.08));
+        box-shadow: 0 12px 32px rgba(139, 111, 71, 0.12);
+        transform: translateY(-6px);
+      }
+
+      .service-icon {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: linear-gradient(135deg, var(--primary), var(--accent));
+        border-radius: 12px;
+        color: white;
+        font-size: 1.8rem;
+        margin-bottom: 1.2rem;
+        box-shadow: 0 4px 12px rgba(139, 111, 71, 0.2);
+      }
+
+      .service-card h3 {
+        font-size: 1.2rem;
+        margin: 0 0 0.8rem;
+        color: var(--primary);
+        font-weight: 700;
+      }
+
+      .service-card p {
+        margin: 0;
+        color: var(--text-light);
+        font-size: 0.95rem;
+        line-height: 1.6;
+      }
+
+      /* Brands Grid */
+      .brands-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+        gap: 1rem;
+        margin: 2rem 0;
+      }
+
+      .brand-badge {
+        padding: 1.2rem 1.4rem;
+        border-radius: 12px;
+        background: linear-gradient(135deg, rgba(139, 111, 71, 0.08), rgba(160, 130, 109, 0.06));
+        border: 1.5px solid rgba(139, 111, 71, 0.2);
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 0.95rem;
+        transition: all 0.3s ease;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.6rem;
+      }
+
+      .brand-badge i {
+        color: var(--accent);
+        font-size: 0.9rem;
+      }
+
+      .brand-badge:hover {
+        background: linear-gradient(135deg, rgba(139, 111, 71, 0.15), rgba(160, 130, 109, 0.12));
+        border-color: var(--accent-light);
+        box-shadow: 0 6px 16px rgba(139, 111, 71, 0.1);
+        transform: translateY(-2px);
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .topbar {
+          flex-direction: column;
+          align-items: flex-start;
+          gap: 1rem;
+          padding: 1rem 1.5rem;
+        }
+
+        nav {
+          width: 100%;
+          gap: 1rem;
+          flex-wrap: wrap;
+        }
+
+        main {
+          padding: 2rem 1rem;
+        }
+
+        .hero {
+          padding: 2.5rem 1.5rem;
+          margin-bottom: 2rem;
+        }
+
+        .hero h1 {
+          font-size: 2rem;
+        }
+
+        .transparent-box {
+          padding: 1.8rem;
+        }
+
+        .image-container {
+          grid-template-columns: repeat(2, 1fr);
+        }
+
+        .two-columns {
+          grid-template-columns: 1fr;
+        }
+
+        .section-grid {
+          gap: 1.5rem;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .topbar {
+          padding: 0.8rem 1rem;
+        }
+
+        nav {
+          gap: 0.8rem;
+        }
+
+        nav a {
+          font-size: 0.85rem;
+        }
+
+        main {
+          padding: 1.5rem 1rem;
+        }
+
+        .hero {
+          padding: 2rem 1.2rem;
+          border-radius: 16px;
+        }
+
+        .hero h1 {
+          font-size: 1.6rem;
+        }
+
+        .transparent-box {
+          padding: 1.5rem;
+          border-radius: 12px;
+        }
+
+        .transparent-box h2 {
+          font-size: 1.3rem;
+        }
+
+        .image-container {
+          grid-template-columns: 1fr;
+          gap: 1rem;
+        }
+
+        button {
+          width: 100%;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <div class="topbar">
+        <a href="index.html"><img class="mainlogo" src="images/logo-full-brown.png" alt="HF-Sense_Logo" /></a>
+        <nav>
+          <a href="#about">Über</a>
+          <a href="#angebote">Angebote</a>
+          <a href="#shop">eBay-Shop</a>
+          <a href="#kontakt">Kontakt</a>
+          <a href="#partner">Partner</a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="about">
+        <p class="section-title">Messgeräte Vertrieb</p>
+        <h1>Präzision, Qualität und zuverlässiger Service für Ihre Messtechnik.</h1>
+        <p>
+          Wir vertreiben hochwertige Messgeräte für unterschiedlichste Anwendungen und garantieren höchste Präzision und Qualität.
+        </p>
+      </section>
+
+      <div class="section-grid">
+        <section class="transparent-box" id="angebote">
+          <h2>Unsere Angebote</h2>
+          <div class="services-grid">
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-cube"></i>
+              </div>
+              <h3>Verkauf & Ankauf</h3>
+              <p>Hochwertige HF-Hochfrequenzmessgeräte kaufen und verkaufen</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-link"></i>
+              </div>
+              <h3>Vermittlung</h3>
+              <p>Vermittlung von HF-Messgeräten jeder Art für Ihre Anforderungen</p>
+            </div>
+            <div class="service-card">
+              <div class="service-icon">
+                <i class="fas fa-certificate"></i>
+              </div>
+              <h3>DAkks Kalibrierung</h3>
+              <p>Professionelle Kalibrierung durch autorisierte Partner</p>
+            </div>
+          </div>
+
+          <h2 style="margin-top: 3rem;">Betreute Marken</h2>
+          <div class="brands-grid">
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Rohde & Schwarz
+            </div>
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Agilent
+            </div>
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Keysight
+            </div>
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Cobham
+            </div>
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Willtek
+            </div>
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Aeroflex
+            </div>
+            <div class="brand-badge">
+              <i class="fas fa-check"></i>
+              Wavetek
+            </div>
+          </div>
+        </section>
+
+        <section class="transparent-box" id="shop">
+          <h2>Unser eBay-Shop</h2>
+          <div class="image-container">
+            <img src="images/s-l1600.webp" alt="Produktbild 1" />
+            <img src="images/s-l1600 (1).webp" alt="Produktbild 2" />
+            <img src="images/s-l1600 (2).webp" alt="Produktbild 3" />
+            <img src="images/s-l1600 (3).webp" alt="Produktbild 4" />
+          </div>
+          <a href="https://www.ebay.de/sch/i.html?item=196371992168&rt=nc&_trksid=p4429486.m3561.l2562&_ssn=hfsense" target="_blank"><button>Zum eBay-Shop</button></a>
+        </section>
+
+        <section class="transparent-box form" id="kontakt">
+          <h2>Kontaktformular</h2>
+          <form action="https://api.web3forms.com/submit" method="post">
+            <input type="hidden" name="access_key" value="d20b0fb5-b214-47c6-b014-440f4aa43277" />
+            <input type="text" name="firma" placeholder="Firma" />
+            <input type="text" name="name" placeholder="Name" />
+            <input type="email" name="email" placeholder="E-Mail" />
+            <input type="tel" name="telefonnummer" placeholder="Telefonnummer" />
+            <textarea name="nachricht" placeholder="Ihre Nachricht"></textarea>
+            <button type="submit">Absenden</button>
+          </form>
+        </section>
+
+        <section class="transparent-box two-columns">
+          <div>
+            <p>HFsense</p>
+            <p>Kunreuthstr. 70</p>
+            <p>81249 München</p>
+          </div>
+          <div>
+            <h3>Kontakt</h3>
+            <a href="tel:+491701470786"><p>Tel.: +49 170 14 70 786</p></a>
+            <a href="mailto:demir.latif@hfsense.de"><p>Mail: demir.latif@hfsense.de</p></a>
+          </div>
+        </section>
+
+        <section class="transparent-box partners-list" id="partner">
+          <h2>Partner</h2>
+          <a target="_blank" href="https://microprecision.com/?srsltid=AfmBOoopXdmicgbPICY3vwRiNrrv-cyxfEmEpaOdC2i1VqIVCf7hTysu"><p>Micro-Precision Calibration</p></a>
+          <a target="_blank" href="https://www.distritem.fr/"><p lang="en">DISTRITEM</p></a>
+          <a target="_blank" href="https://railmate.de/"><p lang="en">Railmate</p></a>
+          <a target="_blank" href="http://www.cantek.top/"><p lang="en">Cantek Technologies</p></a>
+          <a target="_blank" href="https://www.esz-ag.de/"><p lang="en">esz AG</p></a>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <a href="impressum.html"><h3>Impressum</h3></a>
+      <p>&copy; 2025 HF-Sense</p>
+    </footer>
+  </body>
+</html>
