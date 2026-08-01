@@ -1,33 +1,194 @@
 <!DOCTYPE html>
-<html>
+<html lang="de">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Page Not Found</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>404 – Othman Gebäudereinigung</title>
+    <meta name="description" content="Die von Ihnen gesuchte Seite wurde nicht gefunden." />
+    <style>
+      :root {
+        --bg: #f2f4f1;
+        --bg-deep: #dfe6df;
+        --panel: rgba(255, 255, 255, 0.72);
+        --panel-border: rgba(20, 38, 40, 0.12);
+        --text: #1d2f2f;
+        --muted: #5f6f71;
+        --primary: #2d6a6c;
+        --primary-dark: #1d4f50;
+        --accent: #a9c9c7;
+        --shadow: 0 18px 40px rgba(16, 33, 34, 0.12);
+      }
 
-    <style media="screen">
-      body { background: #ECEFF1; color: rgba(0,0,0,0.87); font-family: Roboto, Helvetica, Arial, sans-serif; margin: 0; padding: 0; }
-      #message { background: white; max-width: 360px; margin: 100px auto 16px; padding: 32px 24px 16px; border-radius: 3px; }
-      #message h3 { color: #888; font-weight: normal; font-size: 16px; margin: 16px 0 12px; }
-      #message h2 { color: #ffa100; font-weight: bold; font-size: 16px; margin: 0 0 8px; }
-      #message h1 { font-size: 22px; font-weight: 300; color: rgba(0,0,0,0.6); margin: 0 0 16px;}
-      #message p { line-height: 140%; margin: 16px 0 24px; font-size: 14px; }
-      #message a { display: block; text-align: center; background: #039be5; text-transform: uppercase; text-decoration: none; color: white; padding: 16px; border-radius: 4px; }
-      #message, #message a { box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24); }
-      #load { color: rgba(0,0,0,0.4); text-align: center; font-size: 13px; }
+      * { box-sizing: border-box; }
+
+      html, body {
+        margin: 0;
+        min-height: 100%;
+        font-family: Arial, Helvetica, sans-serif;
+        background: linear-gradient(180deg, var(--bg) 0%, var(--bg-deep) 100%);
+        color: var(--text);
+      }
+
+      body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        padding: 24px 20px 0;
+        text-align: center;
+      }
+
+      .mainlogo {
+        width: min(320px, 72vw);
+        height: auto;
+        display: block;
+        margin: 0 auto;
+      }
+
+      .container {
+        width: min(900px, calc(100% - 32px));
+        margin: 32px auto 0;
+        display: flex;
+        justify-content: center;
+      }
+
+      .transparent-box {
+        width: min(640px, 100%);
+        background: var(--panel);
+        backdrop-filter: blur(8px);
+        border: 1px solid var(--panel-border);
+        border-radius: 28px;
+        box-shadow: var(--shadow);
+        padding: 40px 32px;
+        text-align: center;
+      }
+
+      .eyebrow {
+        display: inline-block;
+        font-size: 0.8rem;
+        letter-spacing: 0.2em;
+        text-transform: uppercase;
+        color: var(--primary-dark);
+        background: rgba(169, 201, 199, 0.28);
+        border: 1px solid rgba(45, 106, 108, 0.15);
+        border-radius: 999px;
+        padding: 8px 14px;
+        margin-bottom: 18px;
+        font-weight: 700;
+      }
+
+      h1 {
+        margin: 0 0 18px;
+        font-size: clamp(2rem, 5vw, 3.3rem);
+        line-height: 1.1;
+        color: var(--text);
+      }
+
+      p {
+        margin: 0 0 20px;
+        font-size: 1.05rem;
+        line-height: 1.7;
+        color: var(--muted);
+      }
+
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 14px;
+        margin-top: 28px;
+      }
+
+      .button {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-width: 180px;
+        padding: 15px 24px;
+        border-radius: 12px;
+        text-decoration: none;
+        font-weight: 700;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+      }
+
+      .button:hover {
+        transform: translateY(-1px);
+      }
+
+      .button.primary {
+        background: linear-gradient(135deg, var(--primary) 0%, var(--primary-dark) 100%);
+        color: #fff;
+        box-shadow: 0 12px 28px rgba(29, 79, 80, 0.2);
+      }
+
+      .button.secondary {
+        background: rgba(255, 255, 255, 0.72);
+        color: var(--primary-dark);
+        border: 1px solid rgba(29, 79, 80, 0.18);
+      }
+
+      footer {
+        margin-top: auto;
+        text-align: center;
+        padding: 28px 20px 30px;
+      }
+
+      footer a {
+        color: var(--primary-dark);
+        text-decoration: none;
+        font-weight: 700;
+      }
+
+      footer p {
+        margin: 8px 0 0;
+        font-size: 0.95rem;
+        color: var(--muted);
+      }
+
       @media (max-width: 600px) {
-        body, #message { margin-top: 0; background: white; box-shadow: none; }
-        body { border-top: 16px solid #ffa100; }
+        .transparent-box {
+          padding: 30px 22px;
+          border-radius: 22px;
+        }
+
+        .actions {
+          flex-direction: column;
+        }
+
+        .button {
+          width: 100%;
+        }
       }
     </style>
   </head>
   <body>
-    <div id="message">
-      <h2>404</h2>
-      <h1>Page Not Found</h1>
-      <p>The specified file was not found on this website. Please check the URL for mistakes and try again.</p>
-      <h3>Why am I seeing this?</h3>
-      <p>This page was generated by the Firebase Command-Line Interface. To modify it, edit the <code>404.html</code> file in your project's configured <code>public</code> directory.</p>
-    </div>
+    <header>
+      <a href="index.html">
+        <img class="mainlogo" src="images/logo-othman-full.png" alt="Othman Gebäudereinigung" />
+      </a>
+    </header>
+
+    <main class="container">
+      <section class="transparent-box">
+        <div class="eyebrow">404</div>
+        <h1>Diese Seite wurde nicht gefunden</h1>
+        <p>
+          Die gewünschte Seite existiert leider nicht oder wurde verschoben.
+          Bitte prüfe die URL oder kehre zur Startseite zurück. Alternativ erreichen Sie uns unter: +49 162 5962 339
+        </p>
+        <div class="actions">
+          <a class="button primary" href="index.html">Zur Startseite</a>
+          <a class="button secondary" href="impressum.html">Impressum</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a href="impressum.html">Impressum</a>
+      <p>&copy; 2026 Othman Gebäudereinigung</p>
+    </footer>
   </body>
 </html>
+
