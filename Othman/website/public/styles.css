@@ -1,10 +1,32 @@
-body {
+* {
+    box-sizing: border-box;
+  }
+
+  html {
+    -webkit-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+  }
+
+  body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f6f6ff;
     color: #0c002c;
+    min-height: 100vh;
   }
+
+  img, svg {
+    max-width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  button, input, textarea {
+    font: inherit;
+  }
+
   .mainlogo {
     width: auto;
     max-width: 320px;
@@ -90,6 +112,37 @@ body {
     color: #333;
   }
 
+  .service-list {
+    list-style: none;
+    padding: 0;
+    margin: 0 auto 2.5rem;
+    max-width: 1100px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .service-list li {
+    list-style: none;
+    background: rgba(255, 255, 255, 0.34);
+    border: 1px solid rgba(12, 0, 44, 0.08);
+    border-radius: 18px;
+    box-shadow: 0 2px 10px rgba(12, 0, 44, 0.05);
+    padding: 1.2rem 1.4rem;
+    margin: 0;
+    line-height: 1.5;
+    text-align: center;
+    color: #0c002c;
+    font-size: clamp(1.05rem, 2vw, 2rem);
+    font-weight: 500;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .service-list li:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 16px rgba(12, 0, 44, 0.08);
+  }
+
   /* Impressum */
   ul {
     padding-left: 1.25rem;
@@ -102,24 +155,57 @@ body {
   }
 
   a p {
-    translate: no;
-}
+    transform: none;
+  }
+
   @media (max-width: 600px) {
-    .container {
-      width: 90%;
+    body {
+      font-size: 16px;
     }
+
+    .container {
+      width: min(92vw, 800px);
+      margin: 0 auto;
+    }
+
+    header, section, footer {
+      padding: 16px 12px;
+    }
+
+    .transparent-box {
+      padding: 18px 14px;
+      border-radius: 16px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 7vw, 3rem);
+      line-height: 1.2;
+      margin: 1.2rem 0 1rem;
+    }
+
+    .service-list {
+      gap: 0.75rem;
+      margin-bottom: 2rem;
+    }
+
+    .service-list li {
+      padding: 0.9rem 1rem;
+      font-size: clamp(1rem, 4.4vw, 1.7rem);
+      border-radius: 14px;
+      box-shadow: 0 2px 8px rgba(12, 0, 44, 0.04);
+    }
+
     .image-container {
       display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      display: flex;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
       justify-content: center;
-      flex-wrap: wrap;
       gap: 10px;
     }
     .image-container img {
       max-width: 100px;
       height: auto;
       object-fit: cover;
+      margin: 0 auto;
     }
     .two-columns {
         display: flex;
