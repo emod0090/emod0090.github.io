@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="de">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="robots" content="noindex, follow" />
+<meta name="theme-color" content="#4f7cac" />
+<title>Vielen Dank für Ihre Anfrage | UDM Gebäudereinigung</title>
+<style>* { box-sizing: border-box; }
+body { margin: 0; min-height: 100svh; padding: 20px; display: grid; place-items: center; background: #edf4f4; color: #162521; font: 15px/1.5 Arial, Helvetica, sans-serif; }
+a { color: inherit; text-decoration: none; }
+a:focus-visible, button:focus-visible { outline: 3px solid #4f7cac; outline-offset: 4px; }
+h1, h2, p { margin: 0; }
+.thank-you { width: min(100%, 640px); padding: 28px 32px 20px; background: #fff; border: 1px solid #d9e0e3; border-radius: 14px; box-shadow: 0 12px 40px #1625210a; }
+.thank-you-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 22px; }
+.thank-you-logo { display: block; width: 36px; height: 72px; object-fit: contain; }
+.success { display: inline-flex; align-items: center; gap: 8px; padding: 6px 10px; background: #edf4f4; border-radius: 20px; color: #426c98; font-size: 11px; font-weight: 700; letter-spacing: .05em; }
+h1 { max-width: 480px; font-size: clamp(26px, 5vw, 36px); line-height: 1.15; letter-spacing: -.03em; }
+.copy { margin-top: 14px; max-width: 480px; color: #3c474b; }
+.contact { margin-top: 22px; padding: 16px 18px; background: #edf4f4; border-radius: 7px; }
+h2 { font-size: 14px; font-weight: 600; margin-bottom: 10px; }
+.details { display: flex; flex-wrap: wrap; gap: 12px 28px; }
+.details span { display: block; font-size: 11px; color: #3c474b; }
+.details a { color: #426c98; font-size: 14px; overflow-wrap: anywhere; }
+.details a:hover, footer a:hover { text-decoration: underline; }
+.button { display: inline-flex; align-items: center; justify-content: center; gap: 24px; padding: 11px 20px; margin-top: 22px; background: #426c98; color: white; border-radius: 4px; font-weight: 600; font-size: 14px; }
+.button:hover { background: #34597f; }
+#redirect-info { margin-top: 14px; }
+.small-note, #redirect-status { font-size: 11px; color: #526168; }
+#redirect-stop { font: inherit; font-size: 11px; color: #426c98; padding: 4px 0; border: 0; background: none; cursor: pointer; text-decoration: underline; text-underline-offset: 3px; }
+#redirect-status:not(:empty) { margin-top: 12px; }
+footer { margin-top: 20px; padding-top: 12px; border-top: 1px solid #d9e0e3; display: flex; justify-content: space-between; gap: 12px; font-size: 10px; color: #526168; }
+[hidden] { display: none !important; }
+@media (max-width: 420px), (max-height: 650px) {
+ body { padding: 12px; }
+ .thank-you { padding: 18px 20px 14px; }
+ .thank-you-header { margin-bottom: 16px; }
+ .thank-you-logo { width: 28px; height: 56px; }
+ .contact { margin-top: 16px; padding: 12px 14px; }
+ .button { margin-top: 16px; }
+ footer { margin-top: 14px; }
+}
+</style>
+</head>
+<body>
+<main class="thank-you" aria-labelledby="thanks-title">
+  <header class="thank-you-header">
+    <a href="index.html" aria-label="UDM Gebäudereinigung – Startseite"><img class="thank-you-logo" src="pictures/logo-full-dark.svg" width="36" height="72" alt="UDM Gebäudereinigung" /></a>
+    <span class="success"><span aria-hidden="true">✓</span> ANFRAGE VERSENDET</span>
+  </header>
+  <h1 id="thanks-title">Vielen Dank für Ihre Anfrage.</h1>
+  <p class="copy">Ihre Nachricht ist bei uns angekommen. Wir melden uns schnellstmöglich bei Ihnen.</p>
+  <section class="contact" aria-labelledby="contact-title">
+    <h2 id="contact-title">Ihr direkter Kontakt zu uns</h2>
+    <div class="details">
+      <p><span>E-Mail</span><a href="mailto:udm.service@gmx.de">udm.service@gmx.de</a></p>
+      <p><span>Telefon</span><a href="tel:+4917624199746">0176 / 241 99 746</a></p>
+    </div>
+  </section>
+  <a class="button" id="back-home" href="index.html">Zur Startseite <span aria-hidden="true">→</span></a>
+  <div id="redirect-info" hidden>
+    <p class="small-note">Automatisch zurück zur Startseite in <span id="redirect-countdown">20</span> Sekunden.</p>
+    <button id="redirect-stop" type="button">Auf dieser Seite bleiben</button>
+  </div>
+  <p id="redirect-status" role="status"></p>
+  <footer><span>UDM Gebäudereinigung</span><a href="impressum.html">Impressum</a></footer>
+</main>
+    <script>
+      const redirectInfo = document.getElementById("redirect-info");
+      const countdown = document.getElementById("redirect-countdown");
+      let seconds = 20;
+      redirectInfo.hidden = false;
+      const redirectTimer = window.setInterval(() => {
+        seconds -= 1;
+        countdown.textContent = seconds;
+        if (seconds <= 0) {
+          window.clearInterval(redirectTimer);
+          window.location.replace("index.html");
+        }
+      }, 1000);
+      document.getElementById("redirect-stop").addEventListener("click", () => {
+        window.clearInterval(redirectTimer);
+        document.getElementById("redirect-status").textContent = "Die automatische Weiterleitung ist angehalten.";
+        redirectInfo.hidden = true;
+        document.getElementById("back-home").focus();
+      });
+    </script>
+  </body>
+</html>
