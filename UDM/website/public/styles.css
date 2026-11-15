@@ -43,7 +43,7 @@ h1 { font-size: clamp(35px, 7.7vw, 63px); line-height: 1.1; letter-spacing: -.03
 .button { display: inline-flex; align-items: center; justify-content: center; min-height: 50px; padding: 12px 23px; border: 1px solid var(--blue-button); background: var(--blue-button); color: white; border-radius: 0; font-size: 14px; font-weight: 600; cursor: pointer; }
 .button:hover { background: #34597f; border-color: #34597f; }
 .hero .button { margin-top: 30px; }
-.hero-image { width: 100%; height: 350px; background: var(--aqua); object-position: center 40%; }
+.hero-image { width: 100%; height: 350px; background: var(--aqua); object-position: center 55%; }
 .section { padding-block: 65px; }
 h2 { font-size: clamp(29px, 5.2vw, 43px); font-weight: 500; line-height: 1.2; letter-spacing: -.025em; overflow-wrap: break-word; }
 h3 { font-size: 20px; line-height: 1.35; font-weight: 600; }
@@ -114,7 +114,7 @@ input::placeholder, textarea::placeholder { color: #5c6a70; opacity: 1; }
   .hero-copy { width: 47%; padding-block: 60px; padding-right: 35px; }
   .hero h1 { font-size: clamp(38px, 4.2vw, 63px); }
   .hero .lead { font-size: 16px; max-width: 350px; }
-  .hero-image { position: absolute; top: 0; right: 0; width: 53%; height: 100%; object-position: 50% 35%; }
+  .hero-image { position: absolute; top: 0; right: 0; width: 53%; height: 100%; object-position: center 55%; }
   .section, .about-section { padding-block: 95px; }
   .section-heading { grid-template-columns: 1.2fr 1fr; align-items: end; gap: 70px; margin-bottom: 45px; }
   .section-heading > p { justify-self: end; }
@@ -136,3 +136,7 @@ input::placeholder, textarea::placeholder { color: #5c6a70; opacity: 1; }
 .review-action .small-note { margin-top: 10px; }
 .review-action .button:disabled { background: #e1e7eb; color: #526168; border-color: #c2cdd4; cursor: not-allowed; }
 @media (min-width: 900px) { .review-layout { grid-template-columns: minmax(0, 1fr) auto; gap: 65px; } }
+
+.form-note a { text-decoration: underline; text-underline-offset: 3px; }
+.site-footer > div { flex-wrap: wrap; }
+.legal p + p { margin-top: 14px; }
