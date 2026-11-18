@@ -31,7 +31,7 @@ header {
 
 header a {
   display: inline-block;
-  max-width: 100%;
+  width: min(300px, 100%);
 }
 
 img {
@@ -41,7 +41,7 @@ img {
 }
 
 .mainlogo {
-  width: min(300px, 100%);
+  width: 100%;
 }
 
 .container {
@@ -146,6 +146,19 @@ button:hover {
 
 .hero .button:hover {
   background: var(--blue);
+}
+
+.hero-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 1rem;
+}
+
+.call-link {
+  padding: 0.7rem 0.5rem;
+  font-weight: 700;
 }
 
 form {
